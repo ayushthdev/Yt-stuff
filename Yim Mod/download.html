@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Download Page</title>
+    <link
+      rel="icon"
+      href="https://ayushthdev.github.io/Yt-stuff/temp/AWALOGO.jpg"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        background: linear-gradient(
+          to bottom,
+          #1c1c1c,
+          #434343
+        ); /* Dark gradient background */
+        color: #f8f9fa; /* Light text color for contrast */
+        font-family: "Arial", sans-serif; /* Font-family for the page */
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center the content vertically */
+      }
+      h1 {
+        margin-bottom: 5px; /* Reduced space below the title */
+        font-weight: bold; /* Ensure the title is bold */
+      }
+      p.lead {
+        margin-bottom: 5px; /* Reduced space below the description */
+      }
+      .header-image-container {
+        position: relative;
+        width: 100%;
+        max-width: 300px; /* Maximum width of the square image */
+        margin: 0 auto; /* Center the image container */
+        padding-top: 300px; /* Create a square aspect ratio */
+        overflow: hidden; /* Ensure content does not overflow */
+      }
+      .header-image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure the logo fits within the square */
+        border-radius: 10px; /* Match the border-radius of the container */
+      }
+      .content-container {
+        padding: 0 15px; /* Responsive padding */
+        text-align: center; /* Center align text */
+      }
+      .download-btn,
+      .guide-btn {
+        padding: 10px 20px; /* Adjust padding for both buttons */
+        font-size: 16px; /* Font size for the buttons */
+        border-radius: 8px; /* Rounded corners */
+        text-transform: uppercase; /* Uppercase text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Inline block display */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+      }
+      .download-btn {
+        margin-top: 5px; /* Reduced margin-top for download button */
+        background-color: #007bff; /* Bootstrap primary color */
+        color: #fff; /* White text color */
+        font-weight: bold; /* Make button text bold */
+      }
+      .download-btn:hover {
+        background-color: #0056b3; /* Darker color on hover */
+      }
+      .guide-btn {
+        margin-top: 5px; /* Reduced margin-top for guide button */
+        background-color: #28a745; /* Green button color */
+        color: #fff; /* White text color */
+        font-weight: bold; /* Bold text */
+      }
+      .guide-btn:hover {
+        background-color: #218838; /* Darker green color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5 content-container">
+      <!-- Header Image -->
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="header-image-container">
+            <img
+              src="https://ayushthdev.github.io/Yt-stuff/temp/AWALOGO.jpg"
+              alt="Logo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Title and Description -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h1>Title</h1>
+          <p class="lead">Description</p>
+        </div>
+      </div>
+
+      <!-- Guide Video Button -->
+      <div class="row mt-3">
+        <div class="col-12">
+          <a
+            href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+            class="guide-btn"
+            target="_blank"
+            >Watch Guide Video</a
+          >
+        </div>
+      </div>
+
+      <!-- Download Button -->
+      <div class="row mt-3">
+        <div class="col-12">
+          <a href="path/to/your/file.zip" class="btn download-btn" download
+            >Download Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
